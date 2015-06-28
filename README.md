@@ -64,9 +64,6 @@ Open a new terminal window.
 $ roslaunch p3dx_gazebo gazebo.launch
 
 Open a new terminal window.
-$ rosrun rqt_gui rqt_gui
-
-Open a new terminal window.
 $ roslaunch p3dx_description rviz.launch
 ```
 
@@ -80,7 +77,15 @@ $ rosrun rqt_gui rqt_gui
 
 ![rqt_gui_for_DiffDrivePlugin]
 
-If more information is needed about DiffDrivePlugin, visit [here](https://github.com/jaejunlee0538/gazebo_personal_tutorial/blob/master/move_pioneer2dx/README.md)
+You have 2 choices to send `vel_cmd` commands.
+
+* using **Message Publisher** plugin
+* using **Robot Steering** plugin
+
+You can use only single interface at once, otherwise two different commands will conflict.
+
+
+And if information about DiffDrivePlugin is needed, visit [here](https://github.com/jaejunlee0538/gazebo_personal_tutorial/blob/master/move_pioneer2dx/README.md)
 
 
 [p3dx_in_gazebo]:https://raw.github.com/jaejunlee0538/ua_ros_p3dx/master/readme/pictures/p3dx_in_gazebo.png
