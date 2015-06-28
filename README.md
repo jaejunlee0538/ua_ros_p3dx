@@ -77,7 +77,7 @@ $ rosrun rqt_gui rqt_gui
 
 ![rqt_gui_for_DiffDrivePlugin]
 
-You have 2 choices to send `vel_cmd` commands.
+You have 2 choices to send `cmd_vel` commands.
 
 * using **Message Publisher** plugin
 * using **Robot Steering** plugin
