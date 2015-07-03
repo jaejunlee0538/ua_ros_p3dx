@@ -173,6 +173,7 @@ work original in ucs-ros-pkg.
   <!-- import the pioneer 3dx's wheels -->
   <!-- properties (constants) -->
   <!-- right/left hubcap + wheel -->
+  <link name="world"/>
   <!-- chassis -->
   <link name="base_link">
     <inertial>
@@ -562,8 +563,8 @@ work original in ucs-ros-pkg.
     </inertial>
   </link>
   <joint name="camera_plate_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="2 2 1.0"/>
-    <parent link="base_link"/>
+    <origin rpy="0 0 0" xyz="1 1 0.0"/>
+    <parent link="world"/>
     <child link="camera_plate"/>
   </joint>
   <link name="front_camera_link">
